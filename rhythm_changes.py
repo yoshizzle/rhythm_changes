@@ -81,10 +81,6 @@ def main():
         description="Generate random 16-row sets from a chord permutation CSV."
     )
     parser.add_argument(
-        "csv_path",
-        help="Path to the CSV file (e.g. 'Rhythm Changes Permutations - First 8 - All Permutations.csv')",
-    )
-    parser.add_argument(
         "--sets",
         type=int,
         default=1,
@@ -108,7 +104,8 @@ def main():
     if args.seed is not None:
         random.seed(args.seed)
 
-    header, rows = load_rows(args.csv_path)
+    header, rows = load_rows("Rhythm Changes Permutations - First 8 - All Permutations.csv")
+
 
     for i in range(1, args.sets + 1):
         sample_rows = generate_set(rows, size=args.size)
