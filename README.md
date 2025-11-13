@@ -6,6 +6,10 @@ I used ChatGPT to help generate the progressions. I make no claims to accuracy; 
 
 ### How to Run
 
+Make sure both files are in the same directory. Using a terminal program, do into the directory and enter the following:
+
 ```
 python3 rhythm_changes.py
 ```
+
+
