@@ -53,7 +53,7 @@ def format_set(set_index: int, header: List[str], rows: List[List[str]]) -> str:
         return text.ljust(width)
 
     lines = []
-    lines.append(f"========== First 8 Bars of Rhythm Changes (Permutations) {set_index} ==========")
+    lines.append(f"========== First 8 Bars of Rhythm Changes (Permutations) ==========")
 
     # Header row
     header_cells = [fmt_cell(h, col_widths[i]) for i, h in enumerate(header)]
